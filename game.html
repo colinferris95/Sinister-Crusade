@@ -12,23 +12,35 @@
   
   </head>
   <body onload="hide();">
-	  <input type="button" 
-	  onclick="gameStart();" value="Create Your Character" id="start">
-	  <div>
-		  
-		  <input type="text" size="30" value="Enter Character name" id="input">
-	  		</input>
+	  
+  	  <div id="outputDiv">
+  	  </div>
 	  
 	  <input type="button" 
-	  onclick="confirm();" value="confirm" id="begin">
-	
+	  onclick="gameStart();" value="Create Your Character" id="character">
+	  <div>
+		  
+	  <input type="text" size="30" value="Hero" id="input">
+      </input>
+	  
+	  <input type="button" 
+	  onclick="confirm();" value="confirm" id="confirm">
+	  
 	  </div>
+	  
+	  <input type="button"
+	  onclick="begin();" value="Start the Game" id="begin">
+	  
+	  <input type="button"
+	  onclick="action();" value="action" id="action">
+	  
+	  <input type="button"
+	  onclick="walk();" value="yes" id="walk">
+	  
+	  <input type="button"
+	  onclick="wrong();" value="no" id="wrong">
 	
-	<div id="outputDiv">
-	</div>
 	
-	
-		
-    
+
   </body>
 </html>
