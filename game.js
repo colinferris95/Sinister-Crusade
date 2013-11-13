@@ -19,9 +19,6 @@ function hide(){
 function gameStart(){
 	input.style.display = "";//releaves player input
 	document.getElementById("confirm").style.display = "";//reveals confirm button
-	
-	
-
 }
 
 
@@ -44,6 +41,13 @@ function begin(){
 	document.getElementById("action").style.display = "";
 	
 }
+
+function showStart()
+	{
+    var img = document.getElementById('Sinister-Crusade-Start.gif');
+    img.style.visibility = 'visible';
+}
+	
 
 //gives player an option
 function action(){
