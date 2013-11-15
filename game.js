@@ -1,4 +1,16 @@
 
+//acess the help page
+function help(){
+	document.getElementById('outputDiv').innerHTML = "Welcome to the Help page! <br> Click the buttons and explore the magic that is sinsister crusade!"
+	
+}
+//clears the output
+function wipe(){
+	document.getElementById('outputDiv').innerHTML = " ";
+}
+
+
+
 var hidden = true;
 
 
@@ -19,9 +31,6 @@ function hide(){
 function gameStart(){
 	input.style.display = "";//releaves player input
 	document.getElementById("confirm").style.display = "";//reveals confirm button
-	
-	
-
 }
 
 
@@ -42,8 +51,20 @@ function begin(){
 	output.innerHTML = "";
 	output.innerHTML = input.value + " enters a long hallway";
 	document.getElementById("action").style.display = "";
+<<<<<<< HEAD
+	document.getElementById("picture")
+=======
+	document.getElementById("picture").src="LongHallway.gif";
+>>>>>>> Greg-branch
 	
 }
+
+function showStart()
+	{
+    var img = document.getElementById('Sinister-Crusade-Start.gif');
+    img.style.visibility = 'visible';
+}
+	
 
 //gives player an option
 function action(){
@@ -62,14 +83,25 @@ function walk(){
 	
 }
 
+//breaks the players soul
 function wrong(){
 	output.innerHTML = "wrong, there is no turning back!!!"
 }
 
 
 
+//player object
+var player;
 
+player.name = document.getElementById("input");
 
+>>>>>>> External Changes
+
+function accesPlayer(){
+	var name = player.name;
+	document.getElementById('outputDiv').innerHTML = name;
+	
+}
 
 
 

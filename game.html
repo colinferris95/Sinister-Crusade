@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <title>Prototype(sinister crusade)</title>
@@ -9,15 +10,29 @@
 
   </style>
 
-  
+<<<<<<< HEAD
+
   </head>
   <body onload="hide();">
-	  
+
+
+
+	  <img src="Sinister-Crusade-Start.gif" id="picture" alt="Sinister Crusade" height="600" width="800" >
+
+
+=======
+    <div style="text-align:center">
+	
+	
+  </head>
+  <body onload="hide();">
+	  <img src="Sinister-Crusade-Start.gif" id="picture" alt="Sinister Crusade" height="600" width="800" >
+>>>>>>> Greg-branch
   	  <div id="outputDiv">
   	  </div>
 	  
-	  <input type="button" 
-	  onclick="gameStart();" value="Create Your Character" id="character">
+	  <input type="button" value="Create Your Character" id="character" onclick="gameStart();" >
+			
 	  <div>
 		  
 	  <input type="text" size="30" value="Hero" id="input">
@@ -25,11 +40,11 @@
 	  
 	  <input type="button" 
 	  onclick="confirm();" value="confirm" id="confirm">
-	  
 	  </div>
+
+	  <div>
 	  
-	  <input type="button"
-	  onclick="begin();" value="Start the Game" id="begin">
+	  <input type="button" value="Start the Game" id="begin" onclick="begin();">
 	  
 	  <input type="button"
 	  onclick="action();" value="action" id="action">
@@ -40,7 +55,21 @@
 	  <input type="button"
 	  onclick="wrong();" value="no" id="wrong">
 	
-	
+	</div>
+
+
+
+	<div>
+		<input type="button"
+		onclick="help();" value="click for help" id="help">
+		
+		<input type="button"
+		onclick="wipe();" value="clear output" id="clear">
+		
+		
+	</div>
+
 
   </body>
 </html>
+
