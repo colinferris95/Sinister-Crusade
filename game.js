@@ -1,4 +1,16 @@
 
+//acess the help page
+function help(){
+	document.getElementById('outputDiv').innerHTML = "Welcome to the Help page! <br> Click the buttons and explore the magic that is sinsister crusade!"
+	
+}
+//clears the output
+function wipe(){
+	document.getElementById('outputDiv').innerHTML = " ";
+}
+
+
+
 var hidden = true;
 
 
@@ -39,6 +51,7 @@ function begin(){
 	output.innerHTML = "";
 	output.innerHTML = input.value + " enters a long hallway";
 	document.getElementById("action").style.display = "";
+	document.getElementById("picture")
 	
 }
 
@@ -66,14 +79,25 @@ function walk(){
 	
 }
 
+//breaks the players soul
 function wrong(){
 	output.innerHTML = "wrong, there is no turning back!!!"
 }
 
 
 
+//player object
+var player;
 
+player.name = document.getElementById("input");
 
+>>>>>>> External Changes
+
+function accesPlayer(){
+	var name = player.name;
+	document.getElementById('outputDiv').innerHTML = name;
+	
+}
 
 
 
