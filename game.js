@@ -51,7 +51,11 @@ function begin(){
 	output.innerHTML = "";
 	output.innerHTML = input.value + " enters a long hallway";
 	document.getElementById("action").style.display = "";
+<<<<<<< HEAD
 	document.getElementById("picture")
+=======
+	document.getElementById("picture").src="LongHallway.gif";
+>>>>>>> Greg-branch
 	
 }
 
