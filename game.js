@@ -39,6 +39,7 @@ function begin(){
 	output.innerHTML = "";
 	output.innerHTML = input.value + " enters a long hallway";
 	document.getElementById("action").style.display = "";
+	document.getElementById("picture").src="LongHallway.gif";
 	
 }
 

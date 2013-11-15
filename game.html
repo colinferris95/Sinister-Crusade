@@ -10,16 +10,16 @@
   </style>
 
     <div style="text-align:center">
-	<img src="Sinister-Crusade-Start.gif" alt="Sinister Crusade" height="600" width="800" >
+	
 	
   </head>
   <body onload="hide();">
-	  
+	  <img src="Sinister-Crusade-Start.gif" id="picture" alt="Sinister Crusade" height="600" width="800" >
   	  <div id="outputDiv">
   	  </div>
 	  
-	  <input type="button" 
-	  onclick="gameStart();" value="Create Your Character" id="character">
+	  <input type="button" value="Create Your Character" id="character" onclick="gameStart();" >
+			
 	  <div>
 		  
 	  <input type="text" size="30" value="Hero" id="input">
@@ -31,8 +31,7 @@
 
 	  <div>
 	  
-	  <input type="button"
-	  onclick="begin();" value="Start the Game" id="begin">
+	  <input type="button" value="Start the Game" id="begin" onclick="begin();">
 	  
 	  <input type="button"
 	  onclick="action();" value="action" id="action">
