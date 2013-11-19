@@ -1,5 +1,8 @@
 
+
 var hidden = true;
+
+
 
 function help(){
 	document.getElementById('outputDiv').innerHTML = "Hi! This is the help page!"
@@ -9,6 +12,10 @@ function help(){
 function wipe(){
 	document.getElementById('outputDiv').innerHTML = "";
 	
+}
+
+function getStatus(){
+	document.getElementById('outputDiv').innerHTML = "this is the player status";
 }
 
 
@@ -23,6 +30,10 @@ function hide(){
 		document.getElementById("walk").style.display = "none";//hidden wak button
 		document.getElementById("wrong").style.display = "none";//hides no turning back
 		document.getElementById("note").style.display = "none";//hides the note button
+		document.getElementById("exit").style.display = "none";//hides the exit to the staircase
+		document.getElementById("room1").style.display = "none";//room1
+		document.getElementById("room2").style.display = "none";//room2
+		document.getElementById("room3").style.display = "none";//room3
 	}
 }
 
@@ -66,6 +77,10 @@ function action(){
 
 }
 
+function wrong(){
+	output.innerHTML = "wrong, there is no turning back!!!"
+}
+
 //allows player to choose
 function walk(){
 	output.innerHTML = input.value + " walks down the hallway and sees a note. Pick up the note?";
@@ -73,22 +88,43 @@ function walk(){
 	document.getElementById("action").style.display = "none";
 	document.getElementById("wrong").style.display = "none";
 	document.getElementById("note").style.display = "";
+	document.getElementById("exit").style.display = "";
 }
 
-function wrong(){
-	output.innerHTML = "wrong, there is no turning back!!!"
-}
-
+//hint for the player
 function note(){
-	output.innerHTML = "The path to victory starts with a 2."
+	alert("The path to victory starts with a 2.");
+	document.getElementById("note").style.display = "none";
+	document.getElementById("exit").style.display = "";
 }
 
+//leads to the staircase
+function exit(){
+	output.innerHTML = input.value + " encounters a staircase which leads to 3 rooms. Which room do you pick?"
+	document.getElementById("note").style.display = "none";
+	document.getElementById("exit").style.display = "none";
+	document.getElementById("room1").style.display = "";
+	document.getElementById("room2").style.display = "";
+	document.getElementById("room3").style.display = "";
+}
 
-function accesPlayer(){
-	var name = player.name;
-	document.getElementById('outputDiv').innerHTML = name;
+function room1(){
 	
 }
+
+function room2(){
+	
+}
+
+function room3(){
+	
+}
+
+
+
+
+
+
 
 
 
