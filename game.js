@@ -5,7 +5,7 @@ var hidden = true;
 
 
 function help(){
-	document.getElementById('outputDiv').innerHTML = "Hi! This is the help page!"
+	document.getElementById('outputDiv').innerHTML = "Hi! This is the help page. <br> If you cannot beat this world or level try restarting. You may need an item you did not get along the way."
 	
 }
 
@@ -164,8 +164,8 @@ function hint(){
 //leads to the door
 function door(){
 	picture.src = "images/castle-door.gif";
-	output.innerHTML = input.value + " encounters a door which leads to 3 rooms. Which room do you pick?"
-	area = "door of deciet"
+	output.innerHTML = input.value + "This is a door that leads to 3 rooms. Which room do you pick?"
+	area = "door of deceit"
 	note.style.display = "none";
 	exit.style.display = "none";
 	room1.style.display = "";
@@ -195,9 +195,9 @@ function roomTwo(){
 }
 
 function riddleOne(){
-	riddle1 = prompt("what has teeth but never eats?", "answer here");
-	if (riddle1 = "comb"){
-		output.innerHTML = "you got the ice axe!";
+	riddle1 = prompt("Power enough to smash ships and crush roofs. Yet it still must fear the sun. What is it?", "Answer here");
+	if (riddle1 = "ice" || riddle1 = "Ice" || riddle1 = "ICE"){
+		output.innerHTML = "You have gained the ice axe!";
 	}
 }
 
