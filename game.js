@@ -228,6 +228,7 @@ function bossOne(){
 	document.getElementById("riddle1").style.display = "none";
 	fight1.style.display = "";
 	boss1.style.display = "none";
+	
 }
 
 function fightOne(){
