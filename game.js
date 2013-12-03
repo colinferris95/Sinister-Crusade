@@ -53,6 +53,11 @@ function hide(){
 		room3.style.display = "none";//room3
 		riddle1 = document.getElementById("riddle1");
 		riddle1.style.display = "none";
+		boss1 = document.getElementById("boss1");
+		boss1.style.display = "none";
+		fight1 = document.getElementById("fight1");
+		fight1.style.display = "none";
+		
 		
 		reset = document.getElementById("reset");
 		reset.style.display = "none";
@@ -87,6 +92,8 @@ function hide2(){
 		room3.style.display = "none";//room3
 		riddle1 = document.getElementById("riddle1");
 		riddle1.style.display = "none";
+		boos1 = document.getElementById("boss1");
+		boss1.style.display = "none";
 		
 		
 		reset = document.getElementById("reset");
@@ -164,7 +171,7 @@ function hint(){
 //leads to the door
 function door(){
 	picture.src = "images/castle-door.gif";
-	output.innerHTML = input.value + "This is a door that leads to 3 rooms. Which room do you pick?"
+	output.innerHTML = input.value + ", This is a door that leads to 3 rooms. Which room do you pick?"
 	area = "door of deceit"
 	note.style.display = "none";
 	exit.style.display = "none";
@@ -196,15 +203,43 @@ function roomTwo(){
 
 function riddleOne(){
 	riddle1 = prompt("Power enough to smash ships and crush roofs. Yet it still must fear the sun. What is it?", "Answer here");
-	if (riddle1 = "ice" || riddle1 = "Ice" || riddle1 = "ICE"){
-		output.innerHTML = "You have gained the ice axe!";
+	if (riddle1 === "ice" || riddle1 === "Ice" || riddle1 === "ICE"){
+		output.innerHTML = "You have gained the ice axe! proceed to the boss";
+		bag = "ice axe";
+		boss1.style.display = "";
+	}
+	else{
+		output.innerHTML = "wrong answer!";
 	}
 }
 
 function roomThree(){
-	
+	room1.style.display = "none";
+	room2.style.display = "none";
+	room3.style.display = "none";
+	output.innerHTML = "You have reached a long stairwell, which leads you to the boss!";
+	boss1.style.display = "";
+
 }
 
+function bossOne(){
+	// add boss picture
+	output.innerHTML = input.value + " this is the boss room!";
+	document.getElementById("riddle1").style.display = "none";
+	fight1.style.display = "";
+	boss1.style.display = "none";
+}
+
+function fightOne(){
+	if (bag === "ice axe" ){
+		output.innerHTML = input.value + " has slain the boss thanks to the ice axe!"
+	}
+	else{
+		output.innerHTML = input.value + " is destroyed by the boss. Try again!"
+		reset.style.display = "";
+		fight1.style.display = "none";
+	}
+}
 
 
 
