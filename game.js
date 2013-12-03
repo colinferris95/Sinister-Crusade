@@ -223,7 +223,7 @@ function roomThree(){
 }
 
 function bossOne(){
-	// add boss picture
+	picture.src="images/FirstBoss.jpg"
 	output.innerHTML = input.value + " this is the boss room!";
 	document.getElementById("riddle1").style.display = "none";
 	fight1.style.display = "";
