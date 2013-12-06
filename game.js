@@ -219,7 +219,7 @@ function downTheHallway(){
 
 //hint for the player
 function hint(){
-	alert("The path to victory starts with a 2.");
+	alert("The door chosen will decide your fate, BETWEEN life and death.");
 	note.style.display = "none";
 	exit.style.display = "";
 }
@@ -237,8 +237,12 @@ function door(){
 }
 
 function roomOne(){
+<<<<<<< HEAD
 	
+=======
+>>>>>>> ecf999b1ce8fa613b19f0f3299048d4bf3042bc5
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
+	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
 	room2.style.display = "none";
 	room3.style.display = "none";
@@ -248,7 +252,7 @@ function roomOne(){
 
 function roomTwo(){
 	
-	output.innerHTML = "answer the riddle to get something sweet!"
+	output.innerHTML = "Answer the riddle to obtain a weapon to help you in your crusade."
 	picture.src="images/RoomWithRiddle1.gif";
 	room1.style.display = "none";
 	room2.style.display = "none";
