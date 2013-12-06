@@ -238,10 +238,6 @@ function door(){
 
 //first room
 function roomOne(){
-<<<<<<< HEAD
-
-=======
->>>>>>> 546715c222e55354f2b42365603a1387e12f07d8
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
@@ -309,15 +305,10 @@ function fightOne(){
 		fight1.style.display = "none";
 	}
 }
-
-<<<<<<< HEAD
-=======
 function worldTwo(){
 	output.innerHTML = "You have now entered world two";
 	
 }
-
->>>>>>> 546715c222e55354f2b42365603a1387e12f07d8
 
 
 
