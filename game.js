@@ -137,7 +137,7 @@ function hide2(){
 }
 //revales input and confirm button
 function gameStart(){
-	input.style.display = "";//releaves player input
+	input.style.display = "";//relieves player input
 	confirm.style.display = "";//reveals confirm button
 	pic1.style.display = "";
 	pic2.style.display = "";
@@ -237,10 +237,6 @@ function door(){
 }
 
 function roomOne(){
-<<<<<<< HEAD
-	
-=======
->>>>>>> ecf999b1ce8fa613b19f0f3299048d4bf3042bc5
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
