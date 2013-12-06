@@ -205,7 +205,7 @@ function roomOne(){
 
 function roomTwo(){
 	
-	output.innerHTML = "answer the riddle to get something sweet!"
+	output.innerHTML = "Answer the riddle to obtain a weapon to help you in your crusade."
 	picture.src="images/RoomWithRiddle1.gif";
 	room1.style.display = "none";
 	room2.style.display = "none";
