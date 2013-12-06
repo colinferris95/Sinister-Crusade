@@ -5,7 +5,7 @@ var hidden = true;
 
 //help pages
 function help(){
-	document.getElementById('outputDiv').innerHTML = "Hi! This is the help page. <br> If you cannot beat this world or level try restarting. You may need an item you did not get along the way."
+	alert("Hi! This is the help page. If you cannot beat this world or level try restarting. You may need an item you did not get along the way.");
 	
 }
 
@@ -311,7 +311,7 @@ function bossOne(){
 
 function fightOne(){
 	fight1.style.display = "none";
-	output.innerHTML = input.value +  "hits the boss, dealing damage. The boss tries to fight back!";
+	output.innerHTML = input.value +  " hits the boss, dealing damage. The boss tries to fight back!";
 	
 }
 
@@ -338,6 +338,7 @@ function finalStrike(){
 		sheild.style.display = "none";
 		dodge.style.display = "none";
 		fight2.style.display = "none";
+		picture.src="images/congratulations.png";
 	}
 	else{
 		output.innerHTML = input.value + " is destroyed by the boss. Try again!"
