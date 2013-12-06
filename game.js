@@ -9,11 +9,7 @@ function help(){
 	
 }
 
-//clears output
-function wipe(){
-	document.getElementById('outputDiv').innerHTML = "";
-	
-}
+
 
 //inventory
   bag = "empty";
@@ -250,7 +246,7 @@ function door(){
 
 //first room
 function roomOne(){
-
+	area = "ice dungeon";
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
@@ -262,7 +258,7 @@ function roomOne(){
 
 //second room
 function roomTwo(){
-	
+	area = "riddle room";
 	output.innerHTML = "Answer the riddle to obtain a weapon to help you in your crusade."
 	picture.src="images/RoomWithRiddle1.gif";
 	room1.style.display = "none";
@@ -290,6 +286,7 @@ function riddleOne(){
 
 //third room
 function roomThree(){
+	area = "long stairwell";
 	room1.style.display = "none";
 	room2.style.display = "none";
 	room3.style.display = "none";
@@ -300,8 +297,8 @@ function roomThree(){
 
 //final boss
 function bossOne(){
-	
-	picture.src="images/FirstBoss.jpg"
+	area = "boss room";
+	picture.src="images/FirstBoss.jpg";
 	output.innerHTML = input.value + " this is the boss room! He tries to attack!";
 	document.getElementById("riddle1").style.display = "none";
 	fight1.style.display = "";

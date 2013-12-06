@@ -44,6 +44,8 @@ background-image:url('images/backgroundorange.jpg');
 	left:39%;
 	font-size:17px;
 	font-family:'MedievalSharp', cursive;
+	border:1px solid;
+	border-radius:20px;
 	
 	
 }
