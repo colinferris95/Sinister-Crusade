@@ -236,11 +236,9 @@ function door(){
 	room3.style.display = "";
 }
 
+//first room
 function roomOne(){
-<<<<<<< HEAD
-	
-=======
->>>>>>> ecf999b1ce8fa613b19f0f3299048d4bf3042bc5
+
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
@@ -250,6 +248,7 @@ function roomOne(){
 	
 }
 
+//second room
 function roomTwo(){
 	
 	output.innerHTML = "Answer the riddle to obtain a weapon to help you in your crusade."
@@ -261,6 +260,7 @@ function roomTwo(){
 	
 }
 
+//riddle that obtains the ice axe
 function riddleOne(){
 	riddle1 = prompt("Power enough to smash ships and crush roofs. Yet it still must fear the sun. What is it?", "Answer here");
 	if (riddle1 === "ice" || riddle1 === "Ice" || riddle1 === "ICE"){
@@ -276,6 +276,7 @@ function riddleOne(){
 	}
 }
 
+//third room
 function roomThree(){
 	room1.style.display = "none";
 	room2.style.display = "none";
@@ -285,6 +286,7 @@ function roomThree(){
 
 }
 
+//final boss
 function bossOne(){
 	picture.src="images/FirstBoss.jpg"
 	output.innerHTML = input.value + " this is the boss room!";
@@ -303,11 +305,6 @@ function fightOne(){
 		reset.style.display = "";
 		fight1.style.display = "none";
 	}
-}
-
-function wordlTwo(){
-	output.innerHTML = "You have now entered world two";
-	
 }
 
 
