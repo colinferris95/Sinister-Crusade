@@ -322,7 +322,7 @@ function sheildAction(){
 }
 
 function dodgeAction(){
-	output.innerHTML = input.value + " tries to dodge the attack, but fails GG."
+	output.innerHTML = input.value + " tries to dodge the attack, but fails. Try again!"
 	reset.style.display = "";
 	sheild.style.display = "none";
 	dodge.style.display = "none";
