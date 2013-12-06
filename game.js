@@ -301,7 +301,7 @@ function fightOne(){
 	}
 }
 
-function wordlTwo(){
+function worldTwo(){
 	output.innerHTML = "You have now entered world two";
 	
 }
