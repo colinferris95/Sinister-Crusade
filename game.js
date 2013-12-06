@@ -3,22 +3,25 @@
 var hidden = true;
 
 
-
+//help pages
 function help(){
 	document.getElementById('outputDiv').innerHTML = "Hi! This is the help page. <br> If you cannot beat this world or level try restarting. You may need an item you did not get along the way."
 	
 }
 
+//clears output
 function wipe(){
 	document.getElementById('outputDiv').innerHTML = "";
 	
 }
 
+//inventory
   bag = "empty";
+//location
   area = "none";
 
 
-
+  //gets player's items and location
 function getStatus(){
 	document.getElementById('outputDiv').innerHTML = "Your bag: " + bag + "<br>" + "Your area: " + area;
 	
@@ -29,6 +32,14 @@ function getStatus(){
 function hide(){
 	if(hidden === true){
 		picture.src = "images/Sinister-Crusade-Start.gif";
+		pic1 = document.getElementById('pic1');
+		pic1.style.display = "none";
+		pic2 = document.getElementById('pic2');
+		pic2.style.display = "none";
+		pic3 = document.getElementById('pic3');
+		pic3.style.display = "none";
+		pic4 = document.getElementById('pic4');
+		pic4.style.display = "none";
 	    input = document.getElementById("input");//User input
 		input.style.display = "none";
 		confirm = document.getElementById("confirm");
@@ -69,9 +80,18 @@ function hide(){
 	}
 }
 
+//reset button
 function hide2(){
 	if(hidden === true){
 		picture.src = "images/Sinister-Crusade-Start.gif";
+		pic1 = document.getElementById('pic1');
+		pic1.style.display = "none";
+		pic2 = document.getElementById('pic2');
+		pic2.style.display = "none";
+		pic3 = document.getElementById('pic3');
+		pic3.style.display = "none";
+		pic4 = document.getElementById('pic4');
+		pic4.style.display = "none";
 	    input = document.getElementById("input");//User input
 		input.style.display = "none";
 		confirm = document.getElementById("confirm");
@@ -119,11 +139,30 @@ function hide2(){
 function gameStart(){
 	input.style.display = "";//releaves player input
 	confirm.style.display = "";//reveals confirm button
-	
+	pic1.style.display = "";
+	pic2.style.display = "";
+	pic3.style.display = "";
+	pic4.style.display = "";
 	
 
 }
 
+//sets the pictures for player
+function thumb1(){
+	document.getElementById('playerThumb').src = "images/bluewarrior.gif";
+}
+
+function thumb2(){
+	document.getElementById('playerThumb').src = "images/greenwarrior.gif";
+}
+
+function thumb3(){
+	document.getElementById('playerThumb').src = "images/stonewarrior.gif";
+}
+
+function thumb4(){
+	document.getElementById('playerThumb').src = "images/warrior.gif";
+}
 
 //Shows player inputed name and reveals start button
 function final(){
@@ -132,12 +171,16 @@ function final(){
 	output.innerHTML = "Your name is " + input.value;
 	begin.style.display = "";
 	document.getElementById('playerHeader').innerHTML = input.value; //makes the header player name
-	document.getElementById('playerThumb').src = "images/face.jpg"
+	
 	playerThumb.style.display = "";
 }
 
 //hides the create character button, the output , the input bar and the confirm button, spawns player
 function start(){
+	pic1.style.display = "none";
+	pic2.style.display = "none";
+	pic3.style.display = "none";
+	pic4.style.display = "none";
 	input.style.display = "none";
 	character.style.display = "none";
 	confirm.style.display = "none";
@@ -194,7 +237,7 @@ function door(){
 }
 
 function roomOne(){
-	// add picture src here greg plz
+	
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	room1.style.display = "none";
 	room2.style.display = "none";
