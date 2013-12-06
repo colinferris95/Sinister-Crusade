@@ -137,7 +137,7 @@ function hide2(){
 }
 //revales input and confirm button
 function gameStart(){
-	input.style.display = "";//releaves player input
+	input.style.display = "";//relieves player input
 	confirm.style.display = "";//reveals confirm button
 	pic1.style.display = "";
 	pic2.style.display = "";
@@ -238,7 +238,10 @@ function door(){
 
 //first room
 function roomOne(){
+<<<<<<< HEAD
 
+=======
+>>>>>>> 546715c222e55354f2b42365603a1387e12f07d8
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
@@ -307,6 +310,14 @@ function fightOne(){
 	}
 }
 
+<<<<<<< HEAD
+=======
+function worldTwo(){
+	output.innerHTML = "You have now entered world two";
+	
+}
+
+>>>>>>> 546715c222e55354f2b42365603a1387e12f07d8
 
 
 
