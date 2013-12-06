@@ -57,6 +57,10 @@ function hide(){
 		boss1.style.display = "none";
 		fight1 = document.getElementById("fight1");
 		fight1.style.display = "none";
+		playerThumb = document.getElementById("playerThumb");
+		playerThumb.style.display = "none";
+		inv1 = document.getElementById('inv1');
+		inv1.style.display = "none";
 		
 		
 		reset = document.getElementById("reset");
@@ -94,6 +98,12 @@ function hide2(){
 		riddle1.style.display = "none";
 		boos1 = document.getElementById("boss1");
 		boss1.style.display = "none";
+		fight1 = document.getElementById("fight1");
+		fight1.style.display = "none";
+		playerThumb = document.getElementById("playerThumb");
+		playerThumb.style.display = "none";
+		inv1 = document.getElementById('inv1');
+		inv1.style.display = "none";
 		
 		
 		reset = document.getElementById("reset");
@@ -121,6 +131,9 @@ function final(){
 	output = document.getElementById('outputDiv');
 	output.innerHTML = "Your name is " + input.value;
 	begin.style.display = "";
+	document.getElementById('playerHeader').innerHTML = input.value; //makes the header player name
+	document.getElementById('playerThumb').src = "images/face.jpg"
+	playerThumb.style.display = "";
 }
 
 //hides the create character button, the output , the input bar and the confirm button, spawns player
@@ -191,7 +204,7 @@ function roomOne(){
 }
 
 function roomTwo(){
-	//ice axe.jpg
+	
 	output.innerHTML = "answer the riddle to get something sweet!"
 	picture.src="images/RoomWithRiddle1.gif";
 	room1.style.display = "none";
@@ -205,8 +218,11 @@ function riddleOne(){
 	riddle1 = prompt("Power enough to smash ships and crush roofs. Yet it still must fear the sun. What is it?", "Answer here");
 	if (riddle1 === "ice" || riddle1 === "Ice" || riddle1 === "ICE"){
 		output.innerHTML = "You have gained the ice axe! proceed to the boss";
+		
 		bag = "ice axe";
 		boss1.style.display = "";
+		document.getElementById('inv1').src = "images/IceAxe.gif"
+		inv1.style.display = "";
 	}
 	else{
 		output.innerHTML = "wrong answer!";
@@ -242,7 +258,10 @@ function fightOne(){
 	}
 }
 
-
+function wordlTwo(){
+	output.innerHTML = "You have now entered world two";
+	
+}
 
 
 
