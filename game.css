@@ -24,3 +24,32 @@ background-image:url('images/backgroundorange.jpg');
 	
 	
 }
+
+#pic1, #pic2, #pic3, #pic4
+{
+	height:100px;
+	width:70px;
+	
+	
+}
+
+#outputDiv
+{
+	margin-top:20px;
+	background-color:#F5ECCE;
+	text-align:center;
+	width:300px;
+	position:
+	absolute;
+	left:39%;
+	font-size:17px;
+	font-family:'MedievalSharp', cursive;
+	
+	
+}
+
+#spacer
+{
+	height:70px;
+	
+}

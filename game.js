@@ -72,6 +72,12 @@ function hide(){
 		playerThumb.style.display = "none";
 		inv1 = document.getElementById('inv1');
 		inv1.style.display = "none";
+		dodge = document.getElementById('dodge');
+		dodge.style.display = "none";
+		sheild = document.getElementById('sheild');
+		sheild.style.display = "none";
+		fight2 = document.getElementById('fight2');
+		fight2.style.display="none";
 		
 		
 		reset = document.getElementById("reset");
@@ -124,6 +130,12 @@ function hide2(){
 		playerThumb.style.display = "none";
 		inv1 = document.getElementById('inv1');
 		inv1.style.display = "none";
+		dodge = document.getElementById('dodge');
+		dodge.style.display = "none";
+		sheild = document.getElementById('sheild');
+		sheild.style.display = "none";
+		fight2 = document.getElementById('fight2');
+		fight2.style.display="none";
 		
 		
 		reset = document.getElementById("reset");
@@ -238,10 +250,7 @@ function door(){
 
 //first room
 function roomOne(){
-<<<<<<< HEAD
 
-=======
->>>>>>> 546715c222e55354f2b42365603a1387e12f07d8
 	output.innerHTML = "The room is covered in ice. " + input.value + " slips and dies.";
 	picture.src="images/IceDungeon.gif";
 	room1.style.display = "none";
@@ -291,17 +300,47 @@ function roomThree(){
 
 //final boss
 function bossOne(){
+	
 	picture.src="images/FirstBoss.jpg"
-	output.innerHTML = input.value + " this is the boss room!";
+	output.innerHTML = input.value + " this is the boss room! He tries to attack!";
 	document.getElementById("riddle1").style.display = "none";
 	fight1.style.display = "";
 	boss1.style.display = "none";
+	sheild.style.display = "";
+	dodge.style.display = "";
+	
 	
 }
 
 function fightOne(){
+	fight1.style.display = "none";
+	output.innerHTML = input.value +  "hits the boss, dealing damage. The boss tries to fight back!";
+	
+}
+
+function sheildAction(){
+	output.innerHTML = input.value + " blocks the boss's attack";
+	sheild.style.display = "none";
+	fight2.style.display = "";
+}
+
+function dodgeAction(){
+	output.innerHTML = input.value + " tries to dodge the attack, but fails GG."
+	reset.style.display = "";
+	sheild.style.display = "none";
+	dodge.style.display = "none";
+	fight1.style.display = "none";
+}
+
+
+
+
+function finalStrike(){
 	if (bag === "ice axe" ){
 		output.innerHTML = input.value + " has slain the boss thanks to the ice axe!"
+		sheild.style.display = "none";
+		dodge.style.display = "none";
+		fight2.style.display = "none";
 	}
 	else{
 		output.innerHTML = input.value + " is destroyed by the boss. Try again!"
@@ -310,14 +349,9 @@ function fightOne(){
 	}
 }
 
-<<<<<<< HEAD
-=======
-function worldTwo(){
-	output.innerHTML = "You have now entered world two";
-	
-}
 
->>>>>>> 546715c222e55354f2b42365603a1387e12f07d8
+
+
 
 
 
